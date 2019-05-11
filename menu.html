@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,    chrome=1">
+        <title>Zeke's Beans and Bowls - Wrightsville Beach</title>
+        <meta name="description" content="Welcome to Zeke's Beans   and Bowls. We are Wrightsville Beach's premiere health food   restaurant serving Tuna Poke Bowls, Acai Bowls, Pitas,    Smoothies, and Coffee. Something for everyone to enjoy!">
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <meta property="og:title" content="Zeke's Beans and Bowls -     Wrightsville Beach" />
+        <meta property="og:site_name" content="Zeke's Beans and     Bowls - Wrightsville Beach">
+        <meta property="og:description" content="Welcome to Zeke's  Beans and Bowls. We are Wrightsville Beach's premiere    health food restaurant serving Tuna Poke Bowls, Acai Bowls,    Pitas, Smoothies, and Coffee. Something for everyone to    enjoy!">
+        <link href="css/normalize.css" rel="stylesheet" type="text/ css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+
+     <body>
+       <div class="container-menu">
+        <header class="header">
+              <h1 class="brand">Zeke's Beans & Bowls</h1>
+              <nav class="nav">
+                <div id="myLinks">
+                  <a href="index.html">Home</a>
+                  <a href="directions.html">Directions</a>
+                  <a href="menu.html">Menu</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="about.html">About</a>
+                  <a href="reviews.html">Reviews</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+              </nav>
+            </header>
+        
+        <div class="page-header"></div>
+          
+        <section class="menu">
+          <h1>Our Menu</h1>
+          <h2>Food</h2>
+            <button onclick="newFunction()">Pitas</button>
+
+            <div id="myDiv">
+              This is my DIV element.
+            </div>
+
+        </section>
+        <footer class="footer center">
+                <ul class="nav-list">
+                  <li>
+                      <a href="https://www.facebook.com/ZekesWB/" target="_blank" alt="Zeke's Beans and Bowls' Facebook"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="http://www.twitter.com" alt="Zeke's Beans and Bowls Twitter account"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="http://www.instagram.com" alt="Zeke's Beans and Bowls Instagram account"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+                <p>Zeke's Beans and Bowls Wrightsville Beach &copy; 2019</p>
+              </footer>
+            </div><!-- end container-->
+
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+
+              function newFunction() {
+                  var x = document.getElementById("myDiv");
+                  if (x.style.display === "none") {
+                  x.style.display = "block";
+                  } else {
+    x.style.display = "none";
+  }
+}
+              </script>
+        </body>
+    </html>
