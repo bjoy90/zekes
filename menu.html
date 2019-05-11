@@ -34,13 +34,12 @@
         <div class="page-header"></div>
           
         <section class="menu">
-          <h1>Our Menu</h1>
-          <h2>Food</h2>
-            <button onclick="newFunction()">Pitas</button>
+          <h1 class="h1">Our Menu</h1>
+          <h2 class="h2">Breakfast</h2>
+            <button class="menu-btn" onclick="newFunction()">Acai Bowls</button>
 
             <div id="myDiv">
-              This is my DIV element.
-            </div>
+              
 
         </section>
         <footer class="footer center">
@@ -71,10 +70,10 @@
 
               function newFunction() {
                   var x = document.getElementById("myDiv");
-                  if (x.style.display === "none") {
-                  x.style.display = "block";
+                  if (x.style.display === "block") {
+                  x.style.display = "none";
                   } else {
-    x.style.display = "none";
+    x.style.display = "block";
   }
 }
               </script>
