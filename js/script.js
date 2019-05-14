@@ -18,9 +18,9 @@ x.style.display = "block";
 
 function eggLink() {
   var x = document.getElementById("eggBreakfasts");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
+    if (x.style.display !== "block") {
       x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
 }
