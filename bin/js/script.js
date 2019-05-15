@@ -33,3 +33,30 @@ function pokeLink() {
       div.style.display = "none";
     }
 }
+
+function saladLink() {
+  var div = document.getElementById("salads"); 
+    if (div.style.display !== "block") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
+
+function pitaLink() {
+  var div = document.getElementById("pitas");
+    if (div.style.display !== "block") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+}
+
+function sideLink() {
+  var div = document.getElementById("sides");
+    if (div.style.display !== "block") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+}

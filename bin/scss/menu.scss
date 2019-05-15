@@ -1,0 +1,60 @@
+  #myDiv {
+    display: none;
+  }
+  
+  #eggBreakfasts {
+    display: none;
+  }
+  
+  #pokeBowls {
+    display: none;
+  }
+
+  #salads {
+    display: none;
+  }
+
+  #pitas {
+    display: none;
+  }
+
+  #sides {
+    display: none;
+  }
+  
+  .menu-div {
+    margin: 1em;
+  }
+
+  .menu-para {
+    font-style: italic;
+  }
+  
+  .menu-list {
+    margin: 1em;
+    line-height: 1.3rem;
+  }
+  
+  .menu-list dt {
+    font-weight: 500;
+  }
+  
+  .menu-desc {
+    margin-bottom: 0.5em;
+  }
+  
+  .desc-border {
+    padding-bottom: 1rem;
+    border-bottom: 4px solid $navy;
+  }
+  .price {
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poke-addons-box {
+    border: 2px solid $navy;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+  }

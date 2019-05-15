@@ -1,0 +1,33 @@
+  /* NAV */
+  
+  .nav {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .nav #myLinks {
+    display: none;
+  }
+  
+  .nav a {
+    color: $primary-brand-color;
+    padding: .5em 1.2em;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid $primary-brand-color;
+  }
+  
+  .nav a:last-child {
+    border-bottom:none;
+  }
+  .nav a.icon {
+    display: block;
+    text-align: center;
+  }
+  
+  .nav a:hover {
+    color: $secondary-brand-color;
+  }

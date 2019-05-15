@@ -1,0 +1,21 @@
+/* BUTTONS */
+  
+  .btn {
+    color: $secondary-brand-color;
+    background: transparent;
+    border: 2px solid $secondary-brand-color;
+    border-radius: 6px;
+    padding: .7rem .5rem;
+    text-align: center;
+    font-size: .8rem;
+    margin: 2% 15%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover {
+    background-color: $secondary-brand-color;
+    color: slategray;
+  }

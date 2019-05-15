@@ -9,8 +9,7 @@
         <meta property="og:title" content="Zeke's Beans and Bowls -     Wrightsville Beach" />
         <meta property="og:site_name" content="Zeke's Beans and     Bowls - Wrightsville Beach">
         <meta property="og:description" content="Welcome to Zeke's  Beans and Bowls. We are Wrightsville Beach's premiere    health food restaurant serving Tuna Poke Bowls, Acai Bowls,    Pitas, Smoothies, and Coffee. Something for everyone to    enjoy!">
-        <link href="css/normalize.css" rel="stylesheet" type="text/ css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="public/css/main.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     </head>
 
@@ -31,53 +30,153 @@
               </nav>
             </header>
         
-        <div class="page-header"></div>
+        <div class="page-header">
+            <h1 class="h1 text-overlay">Our Menu</h1>
+        </div>
           
         <section class="menu">
-          <h1 class="h1">Our Menu</h1>
-          <h2 class="h2">Breakfast</h2>
-            <button class="menu-btn" onclick="newFunction()">Acai Bowls</button>
+            <button class="menu-btn" onclick="newFunction()">Acai Bowls*</button>
 
-            <div id="myDiv">
-                <p>Small $5.25 Large $9</p>
-                <p class="small"><em>make it a pitaya bowl for 50 cents more</em></p>
+            <div id="myDiv" class="menu-div">
+                <p class="bold">Small $5.25   Large $9</p>
+                <p class="menu-para"><em>Make it a pitaya bowl for 50 cents more</em></p>
                 <dl class="menu-list">
-                  <dt>Breakfast Bowl*</dt>
-                  <dd>Blended acai &amp; banana. Topped with granola, banana, strawberry &amp; blueberry.</dd>
-                  <dt>Brazil Bowl*</dt>
-                  <dd>Blended acai &amp; banana. Topped with granola, banana, kiwi, mango &amp; honey.</dd>
-                  <dt>PB &amp; J Bowl*</dt>
-                  <dd>Blended peanut butter &amp; acai. Topped with granola, banana, strawberry, coconut, almond &amp; raisin.</dd>
-                  <dt>North Pole Bowl*</dt>
-                  <dd>Blended acai &amp; banana. Topped with granola, banana, mango, blueberry, almond, and coconut.</dd>
-                  <dt>Haole Bowl*</dt>
-                  <dd>Blended acai &amp; banana. Topped with granola, banana, kiwi, pineapple, &amp; coconut.</dd>
+                  <dt>Breakfast Bowl</dt>
+                  <dd class="menu-desc">Blended acai &amp; banana. Topped with granola, banana, strawberry &amp; blueberry.</dd>
+                  <dt>Brazil Bowl</dt>
+                  <dd class="menu-desc">Blended acai &amp; banana. Topped with granola, banana, kiwi, mango &amp; honey.</dd>
+                  <dt>PB &amp; J Bowl</dt>
+                  <dd class="menu-desc">Blended peanut butter &amp; acai. Topped with granola, banana, strawberry, coconut, almond &amp; raisin.</dd>
+                  <dt>North Pole Bowl</dt>
+                  <dd class="menu-desc">Blended acai &amp; banana. Topped with granola, banana, mango, blueberry, almond, and coconut.</dd>
+                  <dt>Haole Bowl</dt>
+                  <dd class="menu-desc">Blended acai &amp; banana. Topped with granola, banana, kiwi, pineapple, &amp; coconut.</dd>
                   <dt>Build Your Own Acai Bowl</dt>
-                  <dd>Pick a base (acai, peanut butter &amp; acai, or pitaya) which is then topped with granola and your choice of three toppings (banana, strawberry, blueberry, kiwi, mango, pineapple, almond, coconut, raisin, honey) - additional toppings can be added for 50 cents!</dd>
-                  <p><em>Add <strong>energy boosting chia seeds</strong> to any bowl for $1!</em></p>
+                  <dd class="menu-desc">Pick a base (acai, peanut butter &amp; acai, or pitaya) which is then topped with granola and your choice of three toppings (banana, strawberry, blueberry, kiwi, mango, pineapple, almond, coconut, raisin, honey) - additional toppings can be added for 50 cents!</dd>
+                  <p class="menu-para small">*Consuming raw or undercooked poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness</p>
+                </dl>
+                  <p class="menu-para"><em>Add <strong>energy boosting chia seeds</strong> to any bowl for $1!</em></p>
               </div>
 
-            <button class="menu-btn" onclick="eggLink()">Egg Breakfasts</button> 
-            <div id="eggBreakfasts">
-              <p><em>get EGG WHITES ONLY for a buck more</em></p>
-              <dl>
+            <button class="menu-btn" onclick="eggLink()">Egg Breakfasts*</button> 
+            <div id="eggBreakfasts" class="menu-div">
+              <p class="menu-para">Replace eggs with <span class="bold">egg whites</span> for $1 more</p>
+
+              <dl class="menu-list">
                 <dt class="name">Zeke's Bibimbap</dt>
                 <dd>white rice, blackened tofu, carrots, cucumbers, green onion, tomatoes, two sunny eggs, Sriracha, and homemade Asian teriyaki sauce. <span class="price">$7.50</span>
-                  <p><em>Substitute <strong>chicken</strong> (grilled or blackened) or <strong>tuna steak</strong> (grilled or blackened) for tofu</em> <span class="price">$10</span></p></dd>
+                  <p class="menu-desc"><em>Substitute <strong>chicken</strong> (grilled or blackened) or <strong>tuna steak</strong> (grilled or blackened) for tofu</em> <span class="price">$10</span></p></dd>
                 <dt>Southern Loco Moco</dt>
-                <dd>white rice smothered in sausage gravy, chorizo, and two sunny eggs <span class="price">$7</span></dd>
+                <dd class="menu-desc">white rice smothered in sausage gravy, chorizo, and two sunny eggs <span class="price">$7</span></dd>
                 <dt>Fajita Breakfast</dt>
                 <dd>two eggs (your choice of either sunny over rice or scrambled in a pita), cheddar jack cheese, chorizo, sweet onion, tomato, avocado, fajita sauce <span class="price">$8.25</span>
-                <p><em>Add jalapeno for 50 cents</em></p></dd>
+                <p class="menu-desc"><em>Add jalapeno for 50 cents</em></p></dd>
                 <dt>Costa Rican Pita</dt>
                 <dd>two egg omelete with cheddar jack cheese, chorizo, rice, black beans, and Lizano Costa Rican salsa <span class="price">$6.25</span>
-                <p><em>(no pita over rice + $1)</em></p></dd>
+                <p class="menu-desc"><em>(no pita over rice + $1)</em></p></dd>
                 <dt>Spinach, Feta, and Tomato Pita</dt>
                 <dd>two egg omelette with spinach, feta, and tomato topped with cheddar jack cheese <span class="price">$6.25</span>
-                <p><em>(no pita over rice + $1)</em></p></dd>
+                <p class="menu-desc"><em>(no pita over rice + $1)</em></p></dd>
+                <p class="menu-para small">*Consuming raw or undercooked poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness</p>
               </dl>
             </div>
-              
+
+            <button class="menu-btn" onclick="pokeLink()">Poke Bowls*</button>
+            <div id="pokeBowls" class="menu-div">
+              <p class="menu-para">Traditional, Hawaiian-style, sushi-grade tuna, served raw and marinated to order.</p>
+
+              <dl class="menu-list">
+                <dt>O.G.</dt>
+                <dd class="menu-desc">The "Original Gangster"; tuna, shoyu, sesame oil, green onion, sesame seeds, &amp; cucumber.<p class="price">Small $10 &nbsp; Large $14</strong></p></dd>
+                <dt>Spicy</dt>
+                <dd class="menu-desc">Tuna, shoyu, sesame oil, green onion, sesame seeds, Sriracha, crushed red pepper, wasabi &amp; cucumber. <p class="price">Small $10 &nbsp; Large $14</p></dd>
+                <dt>Sweet &nbsp; Spicy</dt>
+                <dd class="menu-desc">Tuna, shoyu, sesame oil, pineapple, sesame seeds, crushed red pepper, seaweed salad &amp; cucumber. <p class="price">Small $10 &nbsp; Large $14</p></dd>
+                <dt>K Special</dt>
+                <dd class="menu-desc">Tuna, seaweed salad, green onion, cucumber, Sriracha aioli, panko &amp; cucumber. <p class="price">Small $12 &nbsp; Large $16</p></dd>
+                <dt>South Western</dt>
+                <dd class="menu-desc">Tuna, jalepeno, sweet and green onions, cilantro, cumin, pineapple, mild chipotle, cucumber, &amp; tortilla crunch. <p class="price">Small $12 &nbsp; Large $16</p></dd>
+                <dt>Cali Poke</dt>
+                <dd class="menu-desc">Tuna, crab, avocado, Sriracha aioli, cucumber, green onion, seaweed salad, masago, &amp; cucumber. <p class="price">Small $12 &nbsp; Large $16</p></dd>
+                <div class="poke-addons-box">
+                <dt>OUR FAVORITE POKE ADD ONS</dt>
+                <dd><p>pineapple, mango, tomato, red onion, sweet onion, green onion, jalapeno + <span class="price">50¢</span></p>
+                <p>white rice, tofu &nbsp; + <span class="price">$1</span></p> 
+                <p>brown rice + <span class="price">$1.25</span></p>
+                <p>avocado, seaweed salad, crab, masago + <span class="price">$2</span></p></dd></div>
+                <dt>Poke Nachos</dt>
+                <dd>Chili chipotle seasoned tuna with cilantro, tomato, pineapple, sweet onion, green onion &amp; jalepenos drizzled with our Sriracha aioli &amp; served with tortilla chips.<span class="price">&nbsp;$10</span></dd>
+                <p class="menu-para small">*Consuming raw or undercooked poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness</p>
+              </dl>
+            </div>
+
+            <button class="menu-btn" onclick="saladLink()">Salads</button>
+            <div id="salads" class="menu-div">
+           <dl class="menu-list">
+           <dt>Kale Salad</dt>
+           <dd class="menu-desc desc-border">Kale, cucumber, carrot, sesame oil, shoyu, avocado, sesame seeds, green onion, pickled ginger, almond &amp; raisins served over brown rice. &nbsp; <span class="price">$10</span>
+          <p>with chicken (grilled or blackened), tuna steak (grilled or blackened), tuna salad (plain or spicy), O.G. poke, or Spicy poke <span class="price">$14</span></p>
+        <p>with K Special/Cali/South West Poke <span class="price">$16</span></p></dd>
+           <dt>Shane's Spinach Salad</dt>
+           <dd class="menu-desc desc-border">Spinach, feta, almond and strawberry drizzled with your choice of honey or a balsamic glaze &nbsp; <span class="price">$4</span>
+          <p>with chicken (grilled or blackened), tuna steak (grilled or blackened), tuna salad (plain or spicy) <span class="price">$8</span></p></dd>
+          <dt>Tuna Salad (plain or spicy)</dt>
+          <dd class="menu-desc desc-border">Homemade tuna salad (plain or spicy) with sesame oil &amp; shoyu seasoned kale served over rice with tortilla chips <span class="price">$8</span></dd>
+          <dt>Cucumber Watermelon Salad</dt>
+          <dd class="desc-border menu-desc">Cucumber and watermelon slices seasoned with sesame oil &amp; shoyu, topped with sesame seeds <span class="price">$2</span></dd>
+        </dl>
+      </div>
+
+      <button class="menu-btn" onclick="pitaLink()">Pitas</button>
+      <div id="pitas" class="menu-div">
+        <dl class="menu-list">
+          <dt>Tuna Melt</dt>
+          <dd class="menu-desc">Our classic tuna salad with mayo, cheddar jack cheese, lettuce, tomato, avocado &nbsp;<span class="price">$8</span></dd>
+          <dt>Da Taso (Greek) Pita</dt>
+          <dd class="menu-desc">Chicken, lettuce, cucumber, red onion, feta, ta-ZEKE sauce &nbsp; <span class="price">$7.50</span></dd>
+          <dt>Piston Honda Pita</dt>
+          <dd class="menu-desc">Tuna (plain or spicy) or chicken, carrot, lettuce, almond, and a balsamic-ginger glaze &nbsp; <span class="price">$7.50</span></dd>
+          <dt>Spicy Tuna Pita</dt>
+          <dd class="menu-desc">Our homemade spicy tuna, seaweed salad, and Sriracha aioli &nbsp; <span class="price">$7.50</span></dd>
+          <dt>Pura Vida Pita</dt>
+          <dd class="menu-desc">Tuna (plain or spicy) or chicken, cheddar jack cheese, lettuce, pineapple, tomato, julienne cucumber, and lizano salsa &nbsp; <span class="price">$8</span></dd>
+          <dt>Peta Pita</dt>
+          <dd class="menu-desc">Kale, spinach, lettuce, avocado, raisin, almond, green onion, red onion, sweet onion, carrot, cucumber, tomato, and your choice of sauce: ta-zeke, balsamic-ginger glaze, Sriracha aioli, O.G. marinade, lizana Costa Rican salsa &nbsp;<span class="price">$7.50</span></dd>
+          <dt>Cali Pita</dt>
+          <dd class="menu-desc">Tuna (plain or spicy), crab, cucumber, avocado, masago, Sriracha aioli, and seaweed salad &nbsp; <span class="price">$8.50</span></dd>
+          <dt>Fajita Pita</dt>
+          <dd class="menu-desc">Cumin, seasoned chicken, lettuce, onion, tomato, cheddar jack cheese, sour cream, and lizano/chipotle sauce &nbsp; <span class="price">$8</span></dd>
+          <dt>Build Your Own Pita</dt>
+          <dd><p class="bold">PICK A PROTEIN</p>
+          <p>Chicken (grilled or blackened, tuna steak (grilled or blackened), tuna salad (plain or spicy), or tofu</p>
+        <p class="bold">PICK A SAUCE</p>
+      <p>ta-ZEKE, balsamic-ginger glaze, Sriracha aioli, O.G. marinade, chipotle, lizana Costa Rican sala</p>
+    <p class="bold">PICK YOUR "OTHERS" (limit 3):</p>
+  <p>lettuce, spinach, kale, cucumber, green onion, red onion, sweet onion, carrot, almond, raison, tomato</p>
+<p class="price">$7.50</p></dd>
+<p>Additional toppings <span class="price">&nbsp; + 50¢</span></p>
+          <p><em>Extra sauce (Lizano, Sriracha aioli, fajita salsa) <span class="price">+ 50¢</span></em></p>
+          
+        </dl>
+      </div>
+
+      <button class="menu-btn" onclick="sideLink()">Sides</button>
+      <div id="sides" class="menu-div">
+        <dl>
+          <dt>avocado</dt>
+          <dd class="menu-desc price">$2</dd>
+          <dt>seaweed salad</dt>
+          <dd class="menu-desc price">$2</dd>
+          <dt>granola</dt>
+          <dd class="menu-desc price">$1.25</dd>
+          <dt>brown rice</dt>
+          <dd class="menu-desc price">$1.25</dd>
+          <dt>white rice</dt>
+          <dd class="menu-desc price">$1</dd>
+          <dt>tofu</dt>
+          <dd class="menu-desc price">$1</dd>
+        </dl>
+      </div>
 
         </section>
         <footer class="footer center">
@@ -96,7 +195,7 @@
               </footer>
             </div><!-- end container-->
 
-            <script src="js/script.js">
+            <script src="bin/js/script.js">
 
               </script>
         </body>

@@ -1,0 +1,86 @@
+  /* CSS GRID */
+  
+  .container-index {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(minmax(100px,auto-fit), minmax(100px,auto-fit));
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "i i i i i i i i i i i i"
+        "l l l l l l l l l l l l"
+        "cl cl cl cl cl cl cl cl cl cl cl cl"
+        "cm cm cm cm cm cm cm cm cm cm cm cm"
+        "ca ca ca ca ca ca ca ca ca ca ca ca"
+        "f f f f f f f f f f f f";
+  }
+  
+  .header {
+    grid-area: h;
+  }
+  
+  .info {
+    grid-area: i;
+  }
+  
+  .callout {
+    grid-area: l;
+  }
+  
+  .cta-l {
+    grid-area: cl;
+  }
+  
+  .cta-m {
+    grid-area: cm;
+  }
+  
+  .cta-a {
+    grid-area: ca;
+  }
+  
+  .footer {
+    grid-area: f;
+  }
+  
+  /* MENU grid*/
+  .container-menu {
+    height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(minmax(100px,auto-fit), minmax(100px,auto-fit));
+  grid-auto-rows: auto;
+  grid-template-areas:
+      "h h h h h h h h h h h h"
+      "i i i i i i i i i i i i"
+      "m m m m m m m m m m m m"
+      "f f f f f f f f f f f f";
+  }
+  
+  .menu {
+    grid-area: m;
+  }
+  
+  /* Header inner grid */
+  .header {
+    display: grid;
+    grid-template-columns: repeat(minmax(100px,auto-fit), minmax(100px,auto-fit));
+    grid-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "b b b b b b b b b b b"
+    ". . . . . n . . . . ."
+  }
+  
+  .brand {
+    grid-area: b;
+  }
+  
+  .nav {
+    grid-area: n;
+  }
+
+  .page-header {
+    grid-area: i; 
+  }

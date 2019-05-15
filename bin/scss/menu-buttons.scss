@@ -1,0 +1,17 @@
+/* MENU BUTTONS */
+.menu-btn {
+    color: white;
+    background: $primary-brand-color;
+    border: 2px solid $primary-brand-color;
+    padding: .25rem .25rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 2% 3%;
+    display: block;
+  }
+  
+  .menu-btn:hover,
+  .menu-btn:active {
+    background: slategray;
+    border: 2px solid slategray;
+  }
