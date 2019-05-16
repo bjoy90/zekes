@@ -45,11 +45,6 @@
   margin-right: 10%; }
 
 /* COLORS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 /* FONT */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -65,17 +60,7 @@ body {
 
 .h2 {
   font-size: 1.8rem;
-  margin: 2%;
   margin-bottom: 0; }
-
-.h3 {
-  margin: 1em 0; }
-
-.h4 {
-  margin: 0.5em 0; }
-
-.h5 {
-  margin: 0.5em; }
 
 /* BUTTONS */
 .btn {
@@ -215,8 +200,16 @@ a {
 /* HEADER STYLES */
 /* For all pages but the index */
 .page-header {
-  background-image: url("http://www.placebeard.it/g/450x350");
+  background-image: url("http://www.placebeard.it/g/450x200");
   background-repeat: no-repeat;
+  height: 200px;
+  width: 100%; }
+
+.direction-page-header {
+  background-image: url("http://www.placebeard.it/g/450x200");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -50px;
   height: 200px;
   width: 100%; }
 
@@ -235,6 +228,16 @@ a {
   padding-top: 5px;
   text-align: center; }
 
+.direction-text-overlay {
+  margin-top: 50px;
+  position: relative;
+  top: 50px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.5rem;
+  color: white;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; }
+
 .text-overlay {
   margin-top: 50px;
   background: rgba(0, 0, 0, 0.75);
@@ -250,6 +253,27 @@ a {
   letter-spacing: 0.5;
   text-align: center;
   margin-top: 100px; }
+
+/* @ 600 - 900px */
+@media only screen and (min-width: 600px) {
+  .info {
+    background-image: url("http://www.placebeard.it/g/900x350");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350; }
+  /* For all pages but the index or directions page*/
+  .page-header {
+    background-image: url("http://www.placebeard.it/g/900x300");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 900; }
+  .direction-page-header {
+    background-image: url("http://www.placebeard.it/g/900x300");
+    background-repeat: no-repeat;
+    position: relative;
+    top: -50px;
+    height: 300px;
+    width: 100%; } }
 
 /* CALLOUT */
 .callout {
@@ -281,11 +305,18 @@ a {
 .cta-a {
   margin-bottom: 10%; }
 
+/* @ 600 - 900px */
 /* DIRECTIONS page */
+.direction {
+  position: relative;
+  top: -50px;
+  margin: 0.5em; }
+
 .directions-list {
   padding-left: 1em;
   margin-left: .5em; }
 
+/* @ 600 - 900px */
 #myDiv {
   display: none; }
 
@@ -333,31 +364,3 @@ a {
   text-align: center;
   margin-bottom: 10px;
   padding: 5px; }
-
-/* LANDSCAPE SMALL SCREENS */
-@media only screen and (min-width: 600px) {
-  .container {
-    grid-template-areas: "h h h h h h h h h h h h" "i i i i i i i i i i i i" "l l l l l l l l l l l l" "cl cl cl cl cl cl cl cl cl cl cl cl" "cm cm cm cm cm cm cm cm cm cm cm cm" "ca ca ca ca ca ca ca ca ca ca ca ca" "f f f f f f f f f f f f"; }
-  .info {
-    background-image: url("http://placebeard.it/g/900x400");
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 100%; } }
-
-/* DIRECTIONS BREAKPOINTS */
-/* @ 600 - 900px */
-@media only screen and (min-width: 600px) {
-  .container {
-    grid-template-areas: "h h h h h h h h h h h h" "i i i i i i i i i i i i" "lo lo lo lo lo lo lo lo lo lo lo lo" "mp mp mp mp mp mp dd dd dd dd dd dd" "f f f f f f f f f f f f"; }
-  .header {
-    grid-area: h; }
-  .info {
-    grid-area: i; }
-  .location {
-    grid-area: lo; }
-  .map {
-    grid-area: mp; }
-  .driving-directions {
-    grid-area: dd; }
-  .footer {
-    grid-area: f; } }
