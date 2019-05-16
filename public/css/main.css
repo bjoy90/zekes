@@ -1,71 +1,157 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0b1 | 201101 
-   NOTE: WORK IN PROGRESS
-   USE WITH CAUTION AND TEST WITH ABANDON */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+/* UTILITIES */
+.indent {
+  padding-left: 15px; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 700; }
+
+.small {
+  font-size: 11px;
+  line-height: 10px;
+  margin-top: 10px; }
+
+.spacer {
+  margin: .5em;
+  padding: .5em; }
+
+/*  --- MEDIA OBJECT */
+.media {
+  margin: 10px; }
+
+.media, .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1; }
+
+.media .img {
+  float: left;
+  margin-right: 10px; }
+
+.media .img img {
   display: block; }
 
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-/* remember to highlight inserts somehow! */
-ins {
-  text-decoration: none; }
-
-del {
-  text-decoration: line-through; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+.media .imgExt {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10%; }
 
 /* COLORS */
-/* UNIVERSAL STYLES*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/* FONT */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.3; }
+
+.h1, .h2, .h3, .h4 {
+  color: teal; }
+
+.h1 {
+  font-size: 2rem; }
+
+.h2 {
+  font-size: 1.8rem;
+  margin: 2%;
+  margin-bottom: 0; }
+
+.h3 {
+  margin: 1em 0; }
+
+.h4 {
+  margin: 0.5em 0; }
+
+.h5 {
+  margin: 0.5em; }
+
+/* BUTTONS */
+.btn {
+  color: #e49c0d;
+  background: transparent;
+  border: 2px solid #e49c0d;
+  border-radius: 6px;
+  padding: .7rem .5rem;
+  text-align: center;
+  font-size: .8rem;
+  margin: 2% 15%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.btn:hover {
+  background-color: #e49c0d;
+  color: slategray; }
+
+/* MENU BUTTONS */
+.menu-btn {
+  color: white;
+  background: teal;
+  border: 2px solid teal;
+  padding: .25rem .25rem;
+  text-align: center;
+  font-size: 1rem;
+  margin: 2% 3%;
+  display: block; }
+
+.menu-btn:hover,
+.menu-btn:active {
+  background: slategray;
+  border: 2px solid slategray; }
+
+/* NAV */
 a {
   text-decoration: none;
   color: inherit; }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 200; }
+.nav {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative; }
+
+.nav #myLinks {
+  display: none; }
+
+.nav a {
+  color: teal;
+  padding: .5em 1.2em;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid teal; }
+
+.nav a:last-child {
+  border-bottom: none; }
+
+.nav a.icon {
+  display: block;
+  text-align: center; }
+
+.nav a:hover {
+  color: #e49c0d; }
+
+/* FOOTER */
+.footer {
+  margin-top: 10%;
+  margin-bottom: 5%; }
+
+.nav-list li {
+  display: inline-block;
+  margin: .8em; }
 
 /* CSS GRID */
 .container-index {
@@ -126,142 +212,17 @@ body {
 .page-header {
   grid-area: i; }
 
-/* NAV */
-.nav {
-  overflow: hidden;
-  background-color: #fff;
-  position: relative; }
-
-.nav #myLinks {
-  display: none; }
-
-.nav a {
-  color: teal;
-  padding: .5em 1.2em;
-  text-decoration: none;
-  font-size: 1em;
-  display: block;
-  text-align: center;
-  border-bottom: 1px solid teal; }
-
-.nav a:last-child {
-  border-bottom: none; }
-
-.nav a.icon {
-  display: block;
-  text-align: center; }
-
-.nav a:hover {
-  color: #e49c0d; }
-
-/* FOOTER */
-.footer {
-  margin-top: 10%;
-  margin-bottom: 5%; }
-
-.nav-list li {
-  display: inline-block;
-  margin: .8em; }
-
-/* HEADINGS */
-.h1, .h2, .h3, .h4 {
-  color: teal; }
-
-.h1 {
-  font-size: 2em; }
-
-.h2 {
-  font-size: 1.8em;
-  margin: 2%;
-  margin-bottom: 0; }
-
-.h3 {
-  margin: 1em 0; }
-
-.h4 {
-  margin: 0.5em 0; }
-
-.h5 {
-  margin: 0.5em; }
-
-/* BUTTONS */
-.btn {
-  color: #e49c0d;
-  background: transparent;
-  border: 2px solid #e49c0d;
-  border-radius: 6px;
-  padding: .7rem .5rem;
-  text-align: center;
-  font-size: .8rem;
-  margin: 2% 15%;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-.btn:hover {
-  background-color: #e49c0d;
-  color: slategray; }
-
-/* UTILITIES */
-.indent {
-  padding-left: 15px; }
-
-.pull-left {
-  float: left; }
-
-.pull-right {
-  float: right; }
-
-.center {
-  text-align: center; }
-
-.bold {
-  font-weight: 700; }
-
-.small {
-  font-size: 11px;
-  line-height: 10px;
-  margin-top: 10px; }
-
-.spacer {
-  margin: .5em;
-  padding: .5em; }
-
-/*  --- MEDIA OBJECT */
-.media {
-  margin: 10px; }
-
-.media, .bd {
-  overflow: hidden;
-  _overflow: visible;
-  zoom: 1; }
-
-.media .img {
-  float: left;
-  margin-right: 10px; }
-
-.media .img img {
-  display: block; }
-
-.media .imgExt {
-  float: right;
-  margin-left: 10px;
-  margin-right: 10%; }
-
-/*INDEX.HTML*/
 /* HEADER STYLES */
 /* For all pages but the index */
 .page-header {
-  background-image: url("http://www.placebeard.it/g/600x400");
+  background-image: url("http://www.placebeard.it/g/450x350");
   background-repeat: no-repeat;
   height: 200px;
   width: 100%; }
 
 .info {
-  background-image: url("http://www.placebeard.it/g/600x400");
+  background-image: url("http://www.placebeard.it/g/450x350");
   background-repeat: no-repeat;
-  height: 400px;
   width: 100%; }
 
 .brand {
@@ -290,9 +251,9 @@ body {
   text-align: center;
   margin-top: 100px; }
 
-/* CALLOUT*/
+/* CALLOUT */
 .callout {
-  margin: 10%;
+  margin: 2%;
   text-align: center; }
 
 /* CTA STYLEs */
@@ -320,22 +281,10 @@ body {
 .cta-a {
   margin-bottom: 10%; }
 
-/*MENU.HTML*/
-/* MENU BUTTONS */
-.menu-btn {
-  color: white;
-  background: teal;
-  border: 2px solid teal;
-  padding: .25rem .25rem;
-  text-align: center;
-  font-size: 1rem;
-  margin: 2% 3%;
-  display: block; }
-
-.menu-btn:hover,
-.menu-btn:active {
-  background: slategray;
-  border: 2px solid slategray; }
+/* DIRECTIONS page */
+.directions-list {
+  padding-left: 1em;
+  margin-left: .5em; }
 
 #myDiv {
   display: none; }
@@ -385,12 +334,6 @@ body {
   margin-bottom: 10px;
   padding: 5px; }
 
-/* DIRECTIONS.HTML */
-/* DIRECTIONS page */
-.directions-list {
-  padding-left: 1em;
-  margin-left: .5em; }
-
 /* LANDSCAPE SMALL SCREENS */
 @media only screen and (min-width: 600px) {
   .container {
@@ -400,3 +343,21 @@ body {
     background-repeat: no-repeat;
     height: 400px;
     width: 100%; } }
+
+/* DIRECTIONS BREAKPOINTS */
+/* @ 600 - 900px */
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-areas: "h h h h h h h h h h h h" "i i i i i i i i i i i i" "lo lo lo lo lo lo lo lo lo lo lo lo" "mp mp mp mp mp mp dd dd dd dd dd dd" "f f f f f f f f f f f f"; }
+  .header {
+    grid-area: h; }
+  .info {
+    grid-area: i; }
+  .location {
+    grid-area: lo; }
+  .map {
+    grid-area: mp; }
+  .driving-directions {
+    grid-area: dd; }
+  .footer {
+    grid-area: f; } }

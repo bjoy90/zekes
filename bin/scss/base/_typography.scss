@@ -1,14 +1,22 @@
-/* HEADINGS */
+/* FONT */
+
+body {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+  line-height: 1.3;
+}
+
   .h1, .h2, .h3, .h4 {
     color: $primary-brand-color;
   }
   
   .h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   
   .h2 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     margin: 2%;
     margin-bottom: 0;
   }

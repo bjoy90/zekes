@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch bin/scss -o public/css"
+    "build-css": "node-sass --include-path scss bin/scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Bethany",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.0"
+  }
 }

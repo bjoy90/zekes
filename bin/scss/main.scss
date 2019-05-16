@@ -1,24 +1,20 @@
-@import "normalize";
-@import "colors";
-@import "universal";
-@import "grid";
-@import "navigation";
-@import "footer";
-@import "headings";
-@import "buttons";
-@import "utilities";
+@import "abstracts/utilities";
+@import "abstracts/variables";
 
-/*INDEX.HTML*/
-@import "header";
-@import "cta";
+@import "base/colors";
+@import "base/reset";
+@import "base/typography";
 
-/*MENU.HTML*/
-@import "menu-buttons";
-@import "menu";
+@import "components/buttons";
+@import "components/navigation";
 
-/* DIRECTIONS.HTML */
-@import "directions";
-  
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
 
-@import "600px";
-  
+@import "pages/home";
+@import "pages/directions";
+@import "pages/menu";
+
+@import "breakpoints/index.scss";
+@import "breakpoints/directions.scss";
