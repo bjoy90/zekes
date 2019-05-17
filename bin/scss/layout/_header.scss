@@ -7,6 +7,7 @@
       height: 200px;
       width: 100%;
     }
+    
 
     .direction-page-header {
       background-image: url('http://www.placebeard.it/g/450x200');
@@ -81,7 +82,7 @@
   .page-header {
     background-image: url('http://www.placebeard.it/g/900x300');
     background-repeat: no-repeat;
-    height: 200px;
+    height: 300px;
     width: 900;
   }
 
@@ -92,5 +93,45 @@
       top: -50px;
       height: 300px;
       width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  i.fa.fa-bars {
+    display: none;
+  }
+
+  .nav ul{
+    display: inline-block;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+  .info {
+    background-image: url('http://www.placebeard.it/g/1200x300');
+    background-repeat: no-repeat;
+    height: 300;
+    width: 100%;
+  }
+
+  /* For all pages but the index or directions page*/
+
+  .page-header {
+    background-image: url('http://www.placebeard.it/g/1200x300');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+  }
+
+  .direction-page-header {
+    background-image: url('http://www.placebeard.it/g/1200x300');
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    width: 100%;
   }
 }
