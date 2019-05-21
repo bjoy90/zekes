@@ -60,3 +60,22 @@ function sideLink() {
       div.style.display = "none";
     }
 }
+
+/*function gromLink() {
+  var div = document.getElementById("groms");
+    if (div.style.display !== "block") {
+      div.style.display = "block") {
+      } else {
+        div.style.display = "none";
+      }
+    }
+
+function smoothieLink() {
+      var div = document.getElementById("smoothies");
+        if (div.style.display !== "block") {
+          div.style.display = "block") {
+          } else {
+            div.style.display = "none";
+          }
+        }
+}

@@ -61,26 +61,3 @@
   .menu {
     grid-area: m;
   }
-  
-  /* Header inner grid */
-  .header {
-    display: grid;
-    grid-template-columns: repeat(minmax(100px,auto-fit), minmax(100px,auto-fit));
-    grid-gap: 5px;
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "b b b b b b b b b b b"
-    ". . . . . n . . . . ."
-  }
-  
-  .brand {
-    grid-area: b;
-  }
-  
-  .nav {
-    grid-area: n;
-  }
-
-  .page-header {
-    grid-area: i; 
-  }
