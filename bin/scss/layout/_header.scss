@@ -1,6 +1,12 @@
   /* HEADER STYLES */
 
     /* For all pages but the index */
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+
+    
     .page-header {
       background-image: url('http://www.placebeard.it/g/450x200');
       background-repeat: no-repeat;
@@ -30,8 +36,8 @@
     font-weight: 300;
     font-size: 18px;
     letter-spacing: 4px;
-    margin: 0 auto;
     padding-top: 5px;
+    position: relative;
     text-align: center;
   }
   .direction-text-overlay {

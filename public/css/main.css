@@ -76,6 +76,15 @@ body {
   font-size: 1.8rem;
   margin-bottom: 0; }
 
+.img-shadow {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; }
+
+.img {
+  height: 250px;
+  width: 250px; }
+
 /* BUTTONS */
 .btn {
   color: #e49c0d;
@@ -119,17 +128,18 @@ a {
 .nav {
   overflow: hidden;
   background-color: #fff;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .nav #myLinks {
   display: none; }
 
 .nav a {
   color: teal;
-  padding: .5em 1.2em;
+  padding: .5em;
   text-decoration: none;
   font-size: 1em;
-  display: block;
+  display: inline-block;
   text-align: center;
   border-bottom: 1px solid teal; }
 
@@ -146,30 +156,28 @@ a {
 .navigation {
   display: none; }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 400px) {
   .navigation {
-    list-style: none;
-    margin-left: 5em; }
-  .navigation li {
-    display: inline-block; }
+    list-style: none; }
+  .nav #myLinks {
+    display: none; }
   .navigation {
     text-align: center;
-    margin: 0 2.5em; } }
+    position: relative; }
+  .navigation li {
+    display: inline-block; } }
 
 @media only screen and (min-width: 850px) {
   .navigation {
-    text-align: center;
-    margin: 0 6em; } }
+    text-align: center; } }
 
 @media only screen and (min-width: 1100px) {
   .navigation {
-    text-align: center;
-    margin: 0 10em; } }
+    text-align: center; } }
 
 @media only screen and (min-width: 1150px) {
   .navigation {
-    text-align: center;
-    margin: 0 em; } }
+    text-align: center; } }
 
 /* FOOTER */
 .footer {
@@ -225,6 +233,10 @@ a {
 
 /* HEADER STYLES */
 /* For all pages but the index */
+.header {
+  width: 100%;
+  text-align: center; }
+
 .page-header {
   background-image: url("http://www.placebeard.it/g/450x200");
   background-repeat: no-repeat;
@@ -250,8 +262,8 @@ a {
   font-weight: 300;
   font-size: 18px;
   letter-spacing: 4px;
-  margin: 0 auto;
   padding-top: 5px;
+  position: relative;
   text-align: center; }
 
 .direction-text-overlay {
