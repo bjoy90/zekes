@@ -58,6 +58,9 @@
   .media .imgExt {
     float: none; } }
 
+body {
+  background-image: url("../../public/img/dust_scratches.png"); }
+
 /* COLORS */
 /* FONT */
 body {
