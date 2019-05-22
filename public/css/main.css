@@ -254,7 +254,8 @@ a {
 .info {
   background-image: url("http://www.placebeard.it/g/450x350");
   background-repeat: no-repeat;
-  width: 100%; }
+  width: 100%;
+  height: 200px; }
 
 .brand {
   color: teal;
