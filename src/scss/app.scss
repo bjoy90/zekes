@@ -1,17 +1,16 @@
 @import "abstracts/utilities";
 @import "abstracts/variables";
 
-@import "base/universal";
-@import "base/colors";
-@import "base/typography";
+@import "base/basic";
 
 @import "components/images";
 @import "components/buttons";
-@import "components/navigation";
+@import "components/typography";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/navigation";
 
 @import "pages/home";
 @import "pages/directions";
